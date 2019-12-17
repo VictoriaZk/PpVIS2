@@ -5,12 +5,13 @@ import java.util.List;
 
 //почва
 public class Soil {
-    private List<String> availableCrops = new ArrayList<String>();
+    private List<String> availableCrops;
     private String name;
-
 
     public Soil(String name) {
         this.name = name;
+        this.availableCrops = new ArrayList<String>();
+        availableCrops.add("помидор");
     }
 
     public List<String> getAvailableCrops() {
@@ -29,7 +30,7 @@ public class Soil {
         this.name = name;
     }
 
-    public String[] checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops){
-        return null;
+    public List<String> checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops){
+        return getAvailableCrops();
     }
 }

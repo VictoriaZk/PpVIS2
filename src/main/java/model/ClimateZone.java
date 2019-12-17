@@ -4,11 +4,9 @@ public class ClimateZone {
     public String nameOfZone;
     public String nameOfAvailableCrops;
 
-
     public ClimateZone(String nameOfZone) {
         this.nameOfZone = nameOfZone;
     }
-
 
     public String getNameOfZone() {
         return nameOfZone;
@@ -26,7 +24,7 @@ public class ClimateZone {
         this.nameOfAvailableCrops = nameOfAvailableCrops;
     }
 
-    public String[] checkPossibilityOfPlanting(String nameOfZone, String nameOfAvailableCrops){
-        return null;
+    public String checkPossibilityOfPlanting(String nameOfZone, String nameOfAvailableCrops){
+        return getNameOfAvailableCrops();
     }
 }

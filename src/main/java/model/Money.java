@@ -5,7 +5,6 @@ public class Money {
 
     public Money(){}
 
-    //узнать сколько денег
     public int getCounter() {
         return counter;
     }
@@ -18,8 +17,4 @@ public class Money {
         this.counter+=money;
     }
 
-    //??????
-    public int takeMoney(int money){
-        return 0;
-    }
 }

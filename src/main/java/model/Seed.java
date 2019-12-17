@@ -1,7 +1,8 @@
 package model;
 
-//семена
-public class Seed {
+import java.util.List;
+
+public class Seed implements Something{
     private String name;
     private int count;
 
@@ -28,7 +29,7 @@ public class Seed {
         this.count = count;
     }
 
-    public void buy(Money money, String name){
-        //????????
+    public List<Something> buy(Money money, String name){
+        return null;
     }
 }

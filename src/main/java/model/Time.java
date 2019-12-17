@@ -5,7 +5,6 @@ public class Time {
 
     public Time(){}
 
-    //узнать время
     public int getCounter() {
         return counter;
     }
