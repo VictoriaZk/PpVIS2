@@ -3,7 +3,6 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-//почва
 public class Soil {
     private List<String> availableCrops;
     private String name;
@@ -11,7 +10,6 @@ public class Soil {
     public Soil(String name) {
         this.name = name;
         this.availableCrops = new ArrayList<String>();
-        availableCrops.add("помидор");
     }
 
     public List<String> getAvailableCrops() {
@@ -30,7 +28,7 @@ public class Soil {
         this.name = name;
     }
 
-    public List<String> checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops){
+    public List<String> checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops) {
         return getAvailableCrops();
     }
 }

@@ -24,7 +24,7 @@ public class ClimateZone {
         this.nameOfAvailableCrops = nameOfAvailableCrops;
     }
 
-    public String checkPossibilityOfPlanting(String nameOfZone, String nameOfAvailableCrops){
+    public String checkPossibilityOfPlanting(String nameOfZone, String nameOfAvailableCrops) {
         return getNameOfAvailableCrops();
     }
 }

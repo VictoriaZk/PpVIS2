@@ -1,12 +1,9 @@
 package model;
 
-//культура
-public class Plant implements CultivatedSomething{
+public class Plant implements CultivatedSomething {
     private String name;
     private int count;
     private int timeOfPlant;
-
-    public Plant(){}
 
     public Plant(String name, int count) {
         this.name = name;
@@ -37,7 +34,7 @@ public class Plant implements CultivatedSomething{
         this.timeOfPlant = timeOfPlant;
     }
 
-    public Plant getPlant(){
+    public Plant getPlant() {
         return new Plant(getName(), getCount());
     }
 }

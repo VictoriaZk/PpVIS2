@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class World {
@@ -8,7 +9,7 @@ public class World {
     private GardenPlot gardenPlot;
     private Time time;
 
-    public World(ClimateZone climateZone, Season season, GardenPlot gardenPlot){
+    public World(ClimateZone climateZone, Season season, GardenPlot gardenPlot) {
         this.climateZone = climateZone;
         this.season = season;
         this.gardenPlot = gardenPlot;
@@ -16,20 +17,23 @@ public class World {
         time.setCounter(12);
     }
 
-    public int getTime(){
+    public int getTime() {
         return time.getCounter();
     }
 
-    public boolean isNight(){
+    public boolean isNight() {
         return time.getCounter() <= 6 || time.getCounter() >= 24;
     }
 
-    public String[] checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops){
-        return null;
+    public List<String> checkPossibilityOfPlanting(String nameOfSoil, List<String> nameOfAvailableCrops) {
+        if (nameOfSoil.equals("тропики")) {
+            return new ArrayList<String>();
+        } else {
+            return null;
+        }
     }
 
-
-    public Season changeSeason(){
+    public Season changeSeason() {
         return new Season("лето");
     }
 }

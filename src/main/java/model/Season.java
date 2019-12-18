@@ -7,19 +7,18 @@ public class Season {
     private List<String> availablePlants;
     private String name;
 
-    public Season(){}
-
     public Season(String name) {
         this.name = name;
         this.availablePlants = new ArrayList<String>();
-        availablePlants.add("огурец");
-        availablePlants.add("помидор");
     }
 
-    public List<String>checkPossibilityOfPlant(List<String>plants){
+    public List<String> checkPossibilityOfPlant(List<String> plants) {
         return getAvailablePlants();
     }
 
+    public void setAvailablePlants(List<String> availablePlants) {
+        this.availablePlants = availablePlants;
+    }
 
     public List<String> getAvailablePlants() {
         return availablePlants;
@@ -32,4 +31,5 @@ public class Season {
     public void setName(String name) {
         this.name = name;
     }
+
 }

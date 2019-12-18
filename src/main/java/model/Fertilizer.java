@@ -1,8 +1,9 @@
 package model;
 
-//удобрение
-public class Fertilizer implements SoilSupplement{
+public class Fertilizer implements SoilSupplement {
     public String name;
+
+    public Fertilizer(){}
 
     public Fertilizer(String name) {
         this.name = name;
@@ -12,11 +13,7 @@ public class Fertilizer implements SoilSupplement{
         return name;
     }
 
-    public void setName(String name) {
+    public void add(String name) {
         this.name = name;
-    }
-
-    public void add(String name){
-
     }
 }

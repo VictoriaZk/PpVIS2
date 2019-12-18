@@ -3,7 +3,8 @@ package model;
 public class Time {
     public int counter;
 
-    public Time(){}
+    public Time() {
+    }
 
     public int getCounter() {
         return counter;

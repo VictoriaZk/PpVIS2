@@ -3,7 +3,8 @@ package model;
 public class Money {
     public int counter;
 
-    public Money(){}
+    public Money() {
+    }
 
     public int getCounter() {
         return counter;
@@ -13,8 +14,7 @@ public class Money {
         this.counter = counter;
     }
 
-    public void addMoney(int money){
-        this.counter+=money;
+    public void addMoney(int money) {
+        this.counter += money;
     }
-
 }

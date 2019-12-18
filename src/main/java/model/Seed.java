@@ -1,12 +1,11 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Seed implements Something{
+public class Seed implements Something {
     private String name;
     private int count;
-
-    public Seed(){}
 
     public Seed(String name, int count) {
         this.name = name;
@@ -29,7 +28,11 @@ public class Seed implements Something{
         this.count = count;
     }
 
-    public List<Something> buy(Money money, String name){
-        return null;
+    public List<Something> buy(Money money, String name) {
+        if (money.getCounter() > 0) {
+            return new ArrayList<>();
+        } else {
+            return null;
+        }
     }
 }
